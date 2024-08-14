@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganakgyan</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            padding: 10px;
+        }
+
+        .navbar img {
+            height: 120px;
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+
+
+
+        .slider {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+
+        .active-slide {
+            opacity: 1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            z-index: 2;
+        }
+
+        
+        .contact-page {
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-page h1 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info,
+        .contact-form {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .contact-info {
+            margin-right: 20px;
+            padding-right: 20px;
+            border-right: 2px solid #ddd;
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .contact-form label {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                margin-right: 0;
+                border-right: none;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 20px;
+            }
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer-section {
+            max-width: 350px;
+        }
+
+        .footer-section h3 {
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: #ccc;
+        }
+
+        .copyright {
+            background-color: #0d0c0c;
+            color: #aaa;
+            padding: 10px;
+            text-align: center;
+            right: 10%;
+            font-size: 14px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="./image/gg logo.png" alt="Logo" style="margin-left: 10%;">
+        <a href="index.html" class="active" style="margin-left: 25%;">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="slider">
+        <div class="slide active-slide" style="background-image: url('./image/3.jpeg');"></div>
+        <div class="slide" style="background-image: url('./image/p3.jpeg');"></div>
+        <div class="slide" style="background-image: url('./image/qw.jpeg');"></div>
+        <div class="content">
+            <h1>An extra effort... Can change the Future</h1>
+        </div>
+    </div>
+       <div class="contact-page" style="margin-left: 20%; margin-top: 2%;">
+            <h1 style="text-align: center;">Contact...</h1>
+            <div class="contact-container" style="margin-top: 5%;">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>If you have any questions ?</p>
+                    <p><strong>Email:</strong>ganakgyan@gmail.com</p>
+                    <p><strong>Phone:</strong>+91 9889130930</p>
+                    <p><strong>Address:</strong>927-A, Near Montesory School, Gorakhpur, UP <br>273008</p>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Get Your Message to Us</h2>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p style="margin-top: 3%;">+91 9889130930</p>
+                <p style="margin-top: 3%;">ganakgyan@gmail.com</p>
+                <p style="margin-top: 3%;">927-A, Near Montesory School, Gorakhpur, UP<br>273008</p>
+
+            </div>
+            <div class="footer-section">
+                <h3>Follow me</h3>
+                <div class="social-icons">
+                 <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook">Facebook</i></a><br>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram">Instagram</i></a><br>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter">Twitter</i></a><br>
+                    <a href="https://www.google.com" target="_blank"><i class="fab fa-google">Gmail</i></a><br>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>About by ganakgyan</h3>
+                <p>Ganakgyan is a platform that provides insightful articles and resources on technology, science, and
+                    innovation.</p>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            &copy; Copyright © 2016, GanakGyan. Designed by GanakGyan
+        </div>
+
+
+
+
+
+
+
+
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active-slide');
+                    if (i === index) {
+                        slide.classList.add('active-slide');
+                    }
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            }
+
+            // Automatically change slides every 3 seconds
+            setInterval(nextSlide, 3000);
+        </script>
+</body>
+
+</html>

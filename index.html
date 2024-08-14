@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganakgyan</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            padding: 10px;
+        }
+
+        .navbar img {
+            height: 120px;
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+       
+
+
+        .slider {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+
+        .active-slide {
+            opacity: 1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            z-index: 2;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+            background-color: #f8f8f8;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .card-content {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .product-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .product-image {
+            width: 500px;
+            height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-description {
+            max-width: 900px;
+            margin-left: 20px;
+        }
+
+        .product-description h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .product-description p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer-section {
+            max-width: 350px;
+        }
+
+        .footer-section h3 {
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: #ccc;
+        }
+
+        .copyright {
+            background-color: #0d0c0c;
+            color: #aaa;
+            padding: 10px;
+            text-align: center;
+            right: 10%;
+            font-size: 14px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="./image/gg logo.png" alt="Logo" style="margin-left: 10%;">
+        <a href="index.html" class="active" style="margin-left: 25%;">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="slider">
+        <div class="slide active-slide" style="background-image: url('./image/3.jpeg');"></div>
+        <div class="slide" style="background-image: url('./image/p3.jpeg');"></div>
+        <div class="slide" style="background-image: url('./image/qw.jpeg');"></div>
+        <div class="content">
+            <h1>An extra effort... Can change the Future</h1>
+        </div>
+    </div>
+    <h1 style=" text-align:center; margin-top: 4%;font-weight: lighter;font-size:45px;">WHY WE STARTED</h1>
+    <p style=" text-align:center; margin-top: 1%;">These days, all the services are provided by lot's of software
+        companies/vendors, but there some gap between
+        requirement, fulfillment, and satisfaction of a software & hardware. So<br> we started to fill the gap between
+        these entities of software & hardware.</p>
+
+
+    <h1 style=" text-align:center; margin-top: 5%;font-size:30px;font-style: ;">Service provided by us</h1>
+    <section class="section" style="margin-right: 10%; margin-left: 10%;margin-top: 5%;">
+        <div class="card" style="height: 275px;">
+            <img src="./image/har.png">
+            <h2 class="card-title">Hardware</h2>
+            <p class="card-content">We started installation and maintenance of hardware services for some of the
+                <br> Educational Institutions and Private Companies.
+            </p>
+        </div>
+        <div class="card" style="height: 275px;">
+            <img src="./image/so.png">
+            <h2 class="card-title">Software</h2>
+            <p class="card-content">We are working on a requirement phase of a Product. Once it is finalized, then we
+                will start the development and release of the Product.</p>
+        </div>
+        <div class="card" style="height: 275px;">
+            <img src="./image/secu.png">
+            <h2 class="card-title">Servillence & Security</h2>
+            <p class="card-content">A significant application of video analysis and understanding is intelligent
+                surveillance, which aims to interpret automatically human activity and detect</p>
+        </div>
+        <div class="card" style="height: 275px;">
+            <img src="./image/tr.png">
+            <h2 class="card-title">Training</h2>
+            <p class="card-content">We will start the training of various software and computer languages in upcoming
+                days.</p>
+        </div>
+        <div class="card" style="height: 275px;">
+            <img src="./image/su.png">
+            <h2 class="card-title">Support</h2>
+            <p class="card-content">We started our hardware and software services for some of the Educational
+                Institutions and Private Companies.</p>
+        </div>
+    </section>
+
+    <div class="product-section">
+        <div class="product-container">
+            <img src="./image/p1.jpeg" alt="Product 1 Image" class="product-image" style="margin-left:10%;">
+            <div class="product-description">
+                <h2>Hardware</h2>
+                <p style="margin-right:30%;font-size: large;">Hardware refers to the physical components of a computer system or any
+                    electronic device. These
+                    components are tangible and can be physically touched and manipulated. Hardware is distinct from
+                    software, which consists of the instructions and data that run on the hardware.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <div class="product-container">
+            <div class="product-description">
+                <h2 style="margin-left: 30%;">software</h2>
+                <p style="margin-left: 30%; font-size: large;">Software is a collection of instructions, data, or programs used to operate
+                    computers and execute
+                    specific tasks. Unlike hardware, which refers to the physical components of a computer system,
+                    software is intangible and comprises the digital code that tells hardware what to do.</p>
+            </div>
+            <img src="./image/p2.jpeg" alt="Product 2 Image" class="product-image" style="margin-right:10%;">
+
+        </div>
+    </div>
+
+    <div class="product-section">
+        <div class="product-container">
+            <img src="./image/qw.jpeg" alt="Product 3 Image" class="product-image" style="margin-left:10%;">
+            <div class="product-description">
+                <h2>Survillence and security</h2>
+                <p style="margin-right:30%;font-size: large;">Surveillance refers to the continuous observation or monitoring of people,
+                    places, or activities to
+                    gather information and ensure security. It is used by governments, businesses, and individuals for
+                    various purposes, including crime prevention, intelligence gathering, and ensuring public safety.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="product-section">
+        <div class="product-container">
+            <div class="product-description">
+                <h2 style="margin-left: 30%;">Traning</h2>
+                <p style="margin-left: 30%;font-size: large;">Training refers to the process of teaching or developing skills, knowledge,
+                    or competencies in a specific area. It is an essential component of personal and professional
+                    development, aiming to improve performance and efficiency in various tasks and activities. Training
+                    can be conducted in many forms, including formal education, workshops, on-the-job training, and
+                    online courses.</p>
+            </div>
+            <img src="./image/tr.jpeg" alt="Product 2 Image" class="product-image" style="margin-right:10%;">
+
+        </div>
+        <div class="product-section">
+            <div class="product-container">
+                <img src="./image/st.jpeg" alt="Product 1 Image" class="product-image" style="margin-left:10%;">
+                <div class="product-description">
+                    <h2>Support</h2>
+                    <p style="margin-right:30%;font-size: large;">Support can refer to a variety of contexts, each with its own specific
+                        meaning and function. Generally, support involves providing assistance, help, or resources to
+                        someone or something in need. Here are some common types of support and what they entail:</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>+91 9889130930</p>
+                <p>ganakgyan@gmail.com</p>
+                <p>927-A, Near Montesory School, Gorakhpur, UP<br>273008</p>
+
+            </div>
+            <div class="footer-section">
+                <h3>Follow me</h3>
+                <div class="social-icons">
+                 <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook">Facebook</i></a><br>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram">Instagram</i></a><br>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter">Twitter</i></a><br>
+                    <a href="https://www.gmail.com" target="_blank"><i class="fab fa-google">Gmail</i></a><br>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>About by ganakgyan</h3>
+                <p>Ganakgyan is a platform that provides insightful articles and resources on technology, science, and
+                    innovation.</p>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            &copy; Copyright © 2016, GanakGyan. Designed by GanakGyan
+        </div>
+
+
+
+
+
+
+
+
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active-slide');
+                    if (i === index) {
+                        slide.classList.add('active-slide');
+                    }
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            }
+
+            // Automatically change slides every 3 seconds
+            setInterval(nextSlide, 3000);
+        </script>
+</body>
+
+</html>
